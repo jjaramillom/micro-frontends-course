@@ -45,6 +45,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       remotes: { home: 'home@http://localhost:3000/remoteEntry.js' }, // The key of the property is the name property of the webpack configuration in /home/webpack.config.js
       exposes: {},
+      // All the libraries that are shared from this library.
       shared: {
         ...deps,
         react: {

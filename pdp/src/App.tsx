@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// @ts-ignore
 import Header from 'home/Header';
+// @ts-ignore
 import Footer from 'home/Footer';
 
 import './index.scss';
