@@ -56,3 +56,7 @@ export default class SafeComponent extends React.Component<{}, State> {
   }
 }
 ```
+
+### Nomenclature =>
+
+In this example, the home is the remote (which has the remote components and functionalities). On the other hand, the PDP is the host, which hosts the `Header` and other things that are remote to it.
