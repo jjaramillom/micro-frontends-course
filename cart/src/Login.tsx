@@ -15,7 +15,7 @@ const Login = () => {
   return (
     <>
       <span onClick={() => setShowLogin(!showLogin)}>
-        <i className='ri-fingerprint-line text-dxl' id='showLogin' />
+        <i className='ri-fingerprint-line text-2xl' id='showLogin' />
       </span>
       {showLogin && (
         <div

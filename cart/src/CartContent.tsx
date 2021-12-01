@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import { login, jwt } from './cart';
+import { jwt } from './cart';
+import MiniCart from './MiniCart';
 import Login from './Login';
 
 const HomeContent = () => {
@@ -13,8 +14,9 @@ const HomeContent = () => {
 
   return (
     <div>
+      <div>JWT: {token}</div>
       <Login />
-      JWT: {token}
+      <MiniCart />
     </div>
   );
 };
