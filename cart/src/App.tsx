@@ -2,16 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'remixicon/fonts/remixicon.css';
 
-import Header from './Header';
-import Footer from './Footer';
-import HomeContent from './HomeContent';
+// @ts-ignore
+import Header from 'home/Header';
+// @ts-ignore
+import Footer from 'home/Footer';
+import CartContent from './CartContent';
 
 import './index.scss';
 
 const App = () => (
   <div className='text-3xl mx-auto max-w-6xl'>
     <Header />
-    <HomeContent />
+    <CartContent />
     <Footer />
   </div>
 );
