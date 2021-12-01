@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Post,
   Request,
@@ -56,5 +57,13 @@ export class CartController {
     this.carts[id] = cart;
 
     return cart;
+  }
+
+  @Delete()
+  @UseGuards(JwtAuthGuard)
+  async delete(@Request() req): Promise<void> {
+    this.carts[req.user.userId] = {
+      cartItems: [],
+    };
   }
 }
