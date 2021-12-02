@@ -46,6 +46,8 @@ module.exports = {
       remotes: {
         // The key of the property is the name property of the webpack configuration in /home/webpack.config.js
         home: 'home@http://localhost:3000/remoteEntry.js',
+        pdp: 'pdp@http://localhost:3001/remoteEntry.js',
+        cart: 'cart@http://localhost:3002/remoteEntry.js',
       },
       exposes: {},
       // All the libraries that are shared from this library.
