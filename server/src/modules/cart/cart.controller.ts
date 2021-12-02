@@ -44,7 +44,7 @@ export class CartController {
   @UseGuards(JwtAuthGuard)
   async create(@Request() req, @Body() { id }): Promise<Cart> {
     const cart = this.carts[req.user.userId] ?? { cartItems: [] };
-    const productToAdd = products[id];
+    const productToAdd = products.find((product) => product.id === id);
     if (!productToAdd) {
       return;
     }
