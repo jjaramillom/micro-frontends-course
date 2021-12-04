@@ -49,9 +49,10 @@ module.exports = {
         cart: 'cart@http://localhost:3002/remoteEntry.js',
       },
       exposes: {
-        './cart': './src//cart.ts',
-        './Login': './src//Login.tsx',
-        './MiniCart': './src//MiniCart.tsx',
+        './cart': './src/cart.ts',
+        './Login': './src/Login.tsx',
+        './MiniCart': './src/MiniCart.tsx',
+        './CartContent': './src/CartContent.tsx',
       },
       shared: {
         ...deps,

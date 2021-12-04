@@ -53,6 +53,8 @@ module.exports = {
         './Header': './src/Header.tsx',
         './Footer': './src/Footer.tsx',
         './products': './src/products.ts',
+        './MainLayout': './src/MainLayout.tsx',
+        './HomeContent': './src/HomeContent.tsx',
       },
       shared: {
         ...deps,
