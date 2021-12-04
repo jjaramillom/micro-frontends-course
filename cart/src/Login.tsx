@@ -29,7 +29,7 @@ const Login = () => {
             className='border text-sm text-black border-gray-400 p-2 rounded-md'
           />
           <input
-            type='text'
+            type='password'
             placeholder='password'
             value={password}
             onChange={(evt) => setPassword(evt.target.value)}
